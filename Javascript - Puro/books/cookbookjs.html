@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Example 1-1</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script type="text/javascript">
+
+    window.onload = function () {
+    	//get keyword list
+    	var keywordList = prompt("Enter keywords, separated by commas","");
+    	//use split to create array of keywords
+    	var arrayList = keywordList.split(",");
+
+    	//build result HTML
+    	var resultString = "";
+    	for (var i = 0; i < arrayList.length; i++){
+    		resultString+="keyword: " +arrayList[i] + "<br />";
+    	}
+
+    	//print out to page
+    	var blk = document.getElementById("result");
+    		blk.innerHTML = resultString;
+    }
+    </script>
+</head>	
+<body><div id="result">
+</div>

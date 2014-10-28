@@ -1,0 +1,30 @@
+##Node - Pro - Notes
+### commander
+´$ npm install commander ´
+###### Install por versão ###
+´$ npm install commander@1.0.0 ´
+###### Install versão mais recente ###
+´$ npm install commander@1.0.x ´
+
+###### Descritores relacionais de faixas de versão ###
+Descitor| Critérios de versão  Faixas de Versão|
+--------|---------------------|
+= versão| Relaciona versão com exatidão| 
+(>)versão| Maior que versão  |
+*| versão mais nova disponivel|
+""| Versão maisn ova idsponível|
+versão1 versao2| Maior ou igual a versão e menor ou igual a versão|
+faixa || faixa | Relaciona versoes especificadas tanto por faixa1 quanto por |faixa2|
+## Comandos Npm Install ##
+`$ npm install commander@"=1.1.0"`
+`$ npm install commander@">1.1.0"`
+`$ npm install commander@"~1.1.0"`
+`$ npm install commander@"*"`
+`$ npm install commander@""`
+`$ npm install commander@">=1.0.0 < 1.1.0"`
+`$ npm install commander@"1.0.0 - 1.1.0"`
+`$ npm install commander@"<=1.0.0 || >=np1.1.0"`
+
+##Localização de um modulo##
+`require.resolve()`//retorna o caminho do modulo
+`require.resolve("http");'http'`

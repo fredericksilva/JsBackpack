@@ -1,0 +1,16 @@
+{
+  "name": "foo-module",
+  "version": "0.0.0",
+  "description": "An awesome nem node modules",
+  "main": "foo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "awesome",
+    "foo"
+  ],
+  "author": "Frederick",
+  "license": "MIT"
+}

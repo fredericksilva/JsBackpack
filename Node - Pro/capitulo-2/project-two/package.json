@@ -1,0 +1,11 @@
+{
+  "name": "project-two",
+  "version": "0.0.0",
+  "description": "exemplo book - pro node for develoer",
+  "main": "programação-defensiva.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
