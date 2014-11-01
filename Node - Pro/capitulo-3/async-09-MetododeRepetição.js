@@ -1,53 +1,36 @@
-//Modelo de Fila
+//Métodos de Repetição
 //npm install async
 /*
-	Metodo queue().
+	Metodo Whilst()ta 
 
-	Pode adicionar tarefas dinamicamente a qualquer momento
+*Listagem 3-29
 
 
-*Listagem 3-25
-* Inicialização de Uma Fila
-* unishift() adiciona tarefa no inicio
-* push() adiciona tarefa no final
+
 */
 
 var async = require("async");
-var queue = async.queue(function(task, callback) {
-	
-
-	//processa argumentos da tarefa
-	console.log(task);
-	callback(null);
-}, 4);
-
-//Listagem 3.26
-/* Um exemplo de adição de tarefas a uma fila async*/
 var i = 0;
-setInterval(function() {
-	queue.push({
-		id: i
-	}, function(error) {
-		console.log("Terminou uma tarefa");
-	});
-	i++;
-}, 200);
 
-/*//Listagem 3.27
+async.whilst(function() {
+	return i < 5;
+}, function(callback) {
+	setTimeout(function() {
+		console.log("i =" + i);
+		i++;
+		callback(null);
+	}, 1000);
+},	function(error) {
+		console.log("pronto!");
+});
 
-if(queue.length() > threshold) {
-	queue.concurrency = 8;
-}*/
+/*Assinatura dos Metodos doWhilst()
 
-//Listagem 3.28 Exemplo de saturated(), empty() e drain()
-queue.saturated = function() {
-	console.log(" A fila está saturada");
-};
+async.doWhilist(corpo, teste, rechamada)
+async.until(teste, corpo, rechamada)
+async.doUntil(corpo, teste, rechamada)
+*/
 
-queue.empty = function() {
-	console.log(" A fila esta vazia ");
-};
+//Memoize() and async.unmemoize(fn) ( Memorizaão )
 
-queue.drain = function() {
-	console.log(" A fila foi drenada ");
-};
+// Lista Completa Github: https://github/caolan/async
