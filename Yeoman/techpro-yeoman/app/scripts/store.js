@@ -1,0 +1,1 @@
+TechproYeoman.ApplicationAdapter = DS.FixtureAdapter;
