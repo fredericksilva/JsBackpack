@@ -116,9 +116,12 @@ var result = Lazy(array)
 ```
 
 ### Documentação
+
 1 - [Undescore](https://github.com/fredericksilva/underscore-contrib)
 2 - [lazy.js](http://dtao.github.io/lazy.js)
+
 3 - [Fun.js](http://functionaljs.org/)
-3 - [_.domextend](http://github.com/1000ch/_.domextend)
+
+4 - [_.domextend](http://github.com/1000ch/_.domextend)
 
 thanks [@1000ch](http://github.com/@1000ch)
