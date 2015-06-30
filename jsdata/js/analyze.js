@@ -1,4 +1,5 @@
 // node start
+// npm install d3 lodash
 // node js/analyze.js
 
 var fs = require("fs");
@@ -11,4 +12,12 @@ fs.readFile("data/animals.tsv", "utf8", function(error, data) {
 
   var maxWeight = d3.max(data, function(d) { return d.avg_weight; });
   console.log(maxWeight);
+});
+
+
+var bigAnimals = data.filter(function(d) { return d.avg_weight > 300; });
+bigAnimalsString = JSON.stringify(bigAnimals);
+
+fs.writeFile("big_animals.json", bigAnimalsString, function(err) {
+  console.log("file written");
 });
